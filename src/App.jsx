@@ -10,7 +10,7 @@ class App extends Component {
   render() {
     return (
       <>
-        <header>
+        <header className="top-header">
           <nav className="top-nav">
             <a href="#">
               <img src={Logo} alt="Stack Overflow Logo" />
@@ -36,11 +36,11 @@ class App extends Component {
             <a href="#">Teams</a>
           </nav>
           <header>
-            <div>
+            <div className="top-part">
               <h1>All Questions</h1>
               <a href="#">Ask a Question</a>
             </div>
-            <div>
+            <div className="bottom-part">
               <p>18,269,585 questions</p>
               <div>
                 <a href="#">Newest</a>
@@ -123,7 +123,7 @@ class App extends Component {
             </ul>
           </section>
           <section className="col-5">
-            <ul>
+            <ul className="social-media">
               <li>Blog</li>
               <li>Facebook</li>
               <li>Twitter</li>

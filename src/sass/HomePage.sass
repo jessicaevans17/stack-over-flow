@@ -1,7 +1,41 @@
+@import "mixins.sass"
+
 .top-nav
+  +flex-row
+  justify-content: space-around
+  border-top: 3px solid $secondaryColor
+  border-bottom: 1px solid #d6d9dc
+  padding: 0.5rem 0rem
+  align-items: center
+  background-color: $primaryColor
 
+  input 
+    height: 1.5rem;
+    +border(3px,$gray, 1px)
+    width: 20rem
+ 
+    
   img 
-    height: 2.5rem
+    height: 2rem
 
+main 
+  +flex-row
 
+.top-part
+  +flex-row 
+  align-items: center
+  justify-content: space-between
+
+.bottom-part
+  +flex-row
+  align-items: center
+  justify-content: space-between
+footer 
+  +flex-row
+
+.social-media
+  +flex-row
+  justify-content: flex-start
+  li
+    padding-right: 1rem
   
