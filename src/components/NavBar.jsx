@@ -13,8 +13,12 @@ const NavBar = () => {
           <a href="#">Customers</a>
           <a href="#">Use Cases</a>
           <input type="text" maxLength="240" placeholder="Search..." />
-          <a href="#">Login</a>
-          <a href="#">Sign Up</a>
+          <a className="login" href="#">
+            Log In
+          </a>
+          <a className="sign-up" href="#">
+            Sign Up
+          </a>
         </nav>
       </header>
     </>

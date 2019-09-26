@@ -9,11 +9,25 @@
   padding: 0.5rem 0rem
   align-items: center
   background-color: $primaryColor
+  font-size: 0.8rem
 
+  a
+    color: black
+
+  .sign-up
+    +border(3px, $gray, 1px)
+    padding: 0.75rem 0.5rem
+    font-size: 0.75rem
+    background-color: $blueColor
+    color: white
+  
+  .login
+    color: $blueColor
+    font-size: 0.80rem
   input 
     height: 1.5rem;
     +border(3px,$gray, 1px)
-    width: 20rem
+    width: 40rem
  
   img 
     height: 2rem
@@ -22,16 +36,22 @@ header
   border-bottom: 1px solid #d6d9dc
 main 
   +flex-row
+  height: 40rem
 
 
 .side-nav
   border-right: 1px solid #d6d9dc
   +flex-column 
-  padding-right: 4rem
+  padding-right: 2.5rem
   padding-left: 1rem
+  padding-top: 2rem
+  
 
 .side-nav-tab
   +flex-column 
+  a
+    padding-bottom: 1rem
+    padding-left: 2rem
 
 footer 
   +flex-row
@@ -57,6 +77,13 @@ footer
     padding-right: 4rem
     padding-left: 1rem
 
+  .ask-question-button
+    +border(3px, $gray, 1px)
+    padding: 0.75rem 0.5rem
+    font-size: 0.75rem
+    background-color: $blueColor
+    color: white
+
   .bottom-part
     +flex-row
     align-items: center
@@ -69,6 +96,7 @@ footer
 
     .newest-filter
       border-radius: 3px 0px 0px 3px
+      margin-left: 10rem
     
 
     .more-filter
