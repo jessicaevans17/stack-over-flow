@@ -43,7 +43,7 @@ const HomePage = () => {
                   More
                 </a>
                 <a className="filter-button" href="#">
-                  {cog}Filter
+                  {cog} Filter
                 </a>
               </div>
             </div>
@@ -53,7 +53,8 @@ const HomePage = () => {
               return (
                 <QuestionPreview
                   key={item.id}
-                  questionTitle={item.question}
+                  questionTitle={item.questionTitle}
+                  questionContent={item.questionContent}
                   votes={item.questionLike}
                 />
               )

@@ -1,11 +1,15 @@
 import React from "react"
+import Logo from "../images/so-icon.png"
 
 const Footer = () => {
   return (
     <>
       <footer>
         <section className="col-1">
-          <h3>Stack Overflow</h3>
+          <div className="footer-logo">
+            <img src={Logo} alt="Stack OverFlow Icon" />
+            <h3>Stack Overflow</h3>
+          </div>
           <ul>
             <li>Questions</li>
             <li>Jobs</li>

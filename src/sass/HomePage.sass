@@ -28,6 +28,7 @@
     height: 1.5rem;
     +border(3px,$gray, 1px)
     width: 40rem
+    padding: 0.25rem 0.25rem
  
   img 
     height: 2rem
@@ -42,9 +43,16 @@ main
 .side-nav
   border-right: 1px solid #d6d9dc
   +flex-column 
-  padding-right: 2.5rem
+  padding-right: 1rem
   padding-left: 1rem
   padding-top: 2rem
+  font-size: 0.85rem
+  
+  a 
+    color: black
+
+  .side-nav-link 
+    margin-bottom: 1rem
   
 
 .side-nav-tab
@@ -60,6 +68,12 @@ footer
   
   h3 
     text-transform: uppercase
+
+  .footer-logo
+    +flex-row
+    
+    img 
+      height: 4rem
 
 .social-media
   +flex-row
@@ -77,6 +91,10 @@ footer
     padding-right: 4rem
     padding-left: 1rem
 
+    h1 
+      font-weight: normal
+      font-size: 1.75rem
+
   .ask-question-button
     +border(3px, $gray, 1px)
     padding: 0.75rem 0.5rem
@@ -93,6 +111,7 @@ footer
     a
       border: solid $gray 1px
       padding: 0.4rem
+      font-size: 0.8rem
 
     .newest-filter
       border-radius: 3px 0px 0px 3px
@@ -102,13 +121,16 @@ footer
     .more-filter
       border-radius: 0px 3px 3px 0px
       margin-right: 2rem
+      
 
     .filter-button
       margin-right: 4rem
       +border(3px, $gray, 1px)
       background-color: $blueColor
-
-
+      background-color: $grayBlue
+      color: $darkBlue
+      
+      
 .votes-answers
   text-align: center
   margin-right: 1rem

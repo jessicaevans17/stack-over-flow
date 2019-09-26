@@ -7,8 +7,12 @@ const SideNav = () => {
   return (
     <>
       <nav className="side-nav">
-        <a href="#">Home</a>
-        <a href="#">Public</a>
+        <a className="side-nav-link" href="#">
+          Home
+        </a>
+        <a className="side-nav-link" href="#">
+          Public
+        </a>
         <div className="side-nav-tab">
           <a href="#">{world} Stack Overflow</a>
           <a href="#">Tags</a>
