@@ -1,5 +1,6 @@
 @import "mixins.sass"
 
+
 .top-nav
   +flex-row
   justify-content: space-around
@@ -14,24 +15,31 @@
     +border(3px,$gray, 1px)
     width: 20rem
  
-    
   img 
     height: 2rem
 
+header 
+  border-bottom: 1px solid #d6d9dc
 main 
   +flex-row
 
-.top-part
-  +flex-row 
-  align-items: center
-  justify-content: space-between
 
-.bottom-part
-  +flex-row
-  align-items: center
-  justify-content: space-between
+.side-nav
+  border-right: 1px solid #d6d9dc
+  +flex-column 
+  padding-right: 4rem
+  padding-left: 1rem
+
+.side-nav-tab
+  +flex-column 
+
 footer 
   +flex-row
+  background-color: $darkishGray
+  color: $gray
+  
+  h3 
+    text-transform: uppercase
 
 .social-media
   +flex-row
@@ -39,3 +47,49 @@ footer
   li
     padding-right: 1rem
   
+.main-content
+  +flex-column 
+
+  .top-part
+    +flex-row 
+    align-items: center
+    justify-content: space-between
+    padding-right: 4rem
+    padding-left: 1rem
+
+  .bottom-part
+    +flex-row
+    align-items: center
+    justify-content: space-between
+    padding-left: 1rem
+
+    a
+      border: solid $gray 1px
+      padding: 0.4rem
+
+    .newest-filter
+      border-radius: 3px 0px 0px 3px
+    
+
+    .more-filter
+      border-radius: 0px 3px 3px 0px
+      margin-right: 2rem
+
+    .filter-button
+      margin-right: 4rem
+      +border(3px, $gray, 1px)
+      background-color: $blueColor
+
+
+.votes-answers
+  text-align: center
+  margin-right: 1rem
+
+.question-preview
+  +flex-row
+  border-bottom: 1px solid #d6d9dc
+  align-items: baseline
+  margin-left: 2rem
+
+.question-and-answer
+  margin-right: 2rem
