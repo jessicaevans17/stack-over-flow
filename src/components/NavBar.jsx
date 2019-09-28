@@ -1,14 +1,15 @@
 import React from "react"
 import Logo from "../images/so-logo.png"
+import { Link } from "react-router-dom"
 
 const NavBar = () => {
   return (
     <>
       <header className="top-header">
         <nav className="top-nav">
-          <a href="#">
+          <Link to="/">
             <img src={Logo} alt="Stack Overflow Logo" />
-          </a>
+          </Link>
           <a href="#">Products</a>
           <a href="#">Customers</a>
           <a href="#">Use Cases</a>

@@ -4,6 +4,7 @@ import { faCog } from "@fortawesome/free-solid-svg-icons"
 import SideNav from "../components/SideNav"
 import QuestionPreview from "../components/QuestionPreview"
 import axios from "axios"
+import { Link } from "react-router-dom"
 const cog = <FontAwesomeIcon icon={faCog} />
 
 const HomePage = () => {
@@ -26,9 +27,9 @@ const HomePage = () => {
           <header>
             <div className="top-part">
               <h1>All Questions</h1>
-              <a className="ask-question-button" href="#">
+              <Link to="/ask-question" className="ask-question-button" href="#">
                 Ask a Question
-              </a>
+              </Link>
             </div>
             <div className="bottom-part">
               <p>18,269,585 questions</p>
