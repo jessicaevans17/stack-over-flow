@@ -16,7 +16,6 @@ class App extends Component {
             <Route exact path="/ask-question" component={AskQuestion}></Route>
             <Route></Route>
           </Switch>
-          <Footer />
         </Router>
       </>
     )
