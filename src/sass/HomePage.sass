@@ -134,12 +134,23 @@ footer
 .votes-answers
   text-align: center
   margin-right: 1rem
+  +flex-column
 
 .question-preview
-  +flex-row
-  border-bottom: 1px solid #d6d9dc
+  +flex-column
   align-items: baseline
-  margin-left: 2rem
+  
 
 .question-and-answer
   margin-right: 2rem
+  
+
+.question-container
+  +flex-row
+  align-items: baseline
+  border-bottom: 1px solid #d6d9dc
+  width: 100%
+  padding-bottom: 1rem
+  
+
+  
